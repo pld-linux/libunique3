@@ -5,7 +5,7 @@ Version:	2.91.4
 Release:	1
 License:	LGPL v2+
 Group:		X11/Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/libunique/2.91/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/libunique/2.91/libunique-%{version}.tar.bz2
 # Source0-md5:	b9d27909765ccdb0e9941cb484bc2137
 URL:		http://live.gnome.org/LibUnique
 BuildRequires:	autoconf >= 2.59
