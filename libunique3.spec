@@ -1,22 +1,22 @@
 Summary:	Library to make sure only one instance of a program is running
 Summary(pl.UTF-8):	Biblioteka zapewniająca uruchamianie tylko jednej instancji programu
 Name:		libunique3
-Version:	2.91.4
+Version:	3.0.0
 Release:	1
 License:	LGPL v2+
 Group:		X11/Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/libunique/2.91/libunique-%{version}.tar.bz2
-# Source0-md5:	b9d27909765ccdb0e9941cb484bc2137
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/libunique/3.0/libunique-%{version}.tar.bz2
+# Source0-md5:	bff4dcb7b888490d09f47a096ef2e685
 URL:		http://live.gnome.org/LibUnique
-BuildRequires:	autoconf >= 2.59
-BuildRequires:	automake >= 1:1.10
+BuildRequires:	autoconf >= 2.63
+BuildRequires:	automake >= 1:1.11
 BuildRequires:	dbus-glib-devel >= 0.70
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	glib2-devel >= 1:2.28.0
 BuildRequires:	gobject-introspection-devel >= 0.9.0
 BuildRequires:	gtk+3-devel >= 3.0.0
 BuildRequires:	gtk-doc >= 1.13
-BuildRequires:	libtool >= 2.2
+BuildRequires:	libtool >= 2:2.2
 BuildRequires:	pkgconfig
 Obsoletes:	gtkunique
 Obsoletes:	unique
@@ -46,7 +46,7 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki unique
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	dbus-glib-devel >= 0.70
-Requires:	gtk+2-devel >= 2:2.12.0
+Requires:	gtk+3-devel >= 3.0.0
 Obsoletes:	gtkunique-devel
 Obsoletes:	unique-devel
 
@@ -135,4 +135,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files apidocs
 %defattr(644,root,root,755)
-%{_gtkdocdir}/unique
+%{_gtkdocdir}/unique-3.0
