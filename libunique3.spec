@@ -20,7 +20,7 @@ BuildRequires:	libtool >= 2:2.2
 BuildRequires:	pkgconfig
 BuildRequires:	xorg-lib-libX11-devel
 Requires:	dbus-glib >= 0.70
-Requires:	glib >= 1:2.28.0
+Requires:	glib2 >= 1:2.28.0
 Obsoletes:	gtkunique
 Obsoletes:	unique
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
