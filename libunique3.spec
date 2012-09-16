@@ -18,6 +18,9 @@ BuildRequires:	gtk+3-devel >= 3.0.0
 BuildRequires:	gtk-doc >= 1.13
 BuildRequires:	libtool >= 2:2.2
 BuildRequires:	pkgconfig
+BuildRequires:	xorg-lib-libX11-devel
+Requires:	dbus-glib >= 0.70
+Requires:	glib >= 1:2.28.0
 Obsoletes:	gtkunique
 Obsoletes:	unique
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -117,7 +120,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS README
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_libdir}/libunique-3.0.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libunique-3.0.so.0
 %{_libdir}/girepository-1.0/Unique-3.0.typelib
