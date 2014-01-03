@@ -2,7 +2,7 @@ Summary:	Library to make sure only one instance of a program is running
 Summary(pl.UTF-8):	Biblioteka zapewniająca uruchamianie tylko jednej instancji programu
 Name:		libunique3
 Version:	3.0.2
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libunique/3.0/libunique-%{version}.tar.bz2
