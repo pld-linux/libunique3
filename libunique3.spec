@@ -79,9 +79,7 @@ Summary(pl.UTF-8):	Dokumentacja API biblioteki unique
 Group:		Documentation
 Requires:	gtk-doc-common
 Obsoletes:	unique-apidocs
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 unique library API documentation.
